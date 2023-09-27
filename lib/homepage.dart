@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rolling_bottom_bar/rolling_bottom_bar.dart';
 import 'package:rolling_bottom_bar/rolling_bottom_bar_item.dart';
 import 'call.dart';
+import 'chat.dart';
 
 class Home_page extends StatefulWidget {
   const Home_page({Key? key}) : super(key: key);
@@ -50,9 +51,7 @@ class _Home_pageState extends State<Home_page> {
         controller: _controller,
         children: <Widget>[
           Call(),
-          Container(
-            color: Colors.black54,
-          ),
+          StunningPage(),
           Container(
             color: Colors.purple,
           ),
@@ -68,14 +67,14 @@ class _Home_pageState extends State<Home_page> {
         flat: false,
         useActiveColorByDefault: false,
         items: [
-          RollingBottomBarItem(Icons.dock,
-              label: 'All Events', activeColor: Colors.purple),
-          RollingBottomBarItem(Icons.add_box,
-              label: 'Add Event', activeColor: Colors.purple),
-          RollingBottomBarItem(Icons.home_rounded,
-              label: 'Info', activeColor: Colors.purple),
-          RollingBottomBarItem(Icons.person,
-              label: 'Profile', activeColor: Colors.purple),
+          RollingBottomBarItem(Icons.call,
+              label: 'Call', activeColor: Colors.purple),
+          RollingBottomBarItem(Icons.phone_android_sharp,
+              label: 'Phones', activeColor: Colors.purple),
+          RollingBottomBarItem(Icons.laptop,
+              label: 'Laptop', activeColor: Colors.purple),
+          RollingBottomBarItem(Icons.chat_bubble,
+              label: 'Chat', activeColor: Colors.purple),
         ],
         enableIconRotation: true,
         onTap: (index) {
