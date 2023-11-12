@@ -3,6 +3,8 @@ import 'package:rolling_bottom_bar/rolling_bottom_bar.dart';
 import 'package:rolling_bottom_bar/rolling_bottom_bar_item.dart';
 import 'call.dart';
 import 'chat.dart';
+import 'phones.dart';
+import 'laptops.dart';
 
 class Home_page extends StatefulWidget {
   const Home_page({Key? key}) : super(key: key);
@@ -51,10 +53,8 @@ class _Home_pageState extends State<Home_page> {
         controller: _controller,
         children: <Widget>[
           Call(),
-          StunningPage(),
-          Container(
-            color: Colors.purple,
-          ),
+          TopPhones(),
+          TopLaps(),
           Container(
             color: Colors.yellow,
           ),
